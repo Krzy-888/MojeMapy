@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<style>
+    #content {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+
+    #UI {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    #UI div {
+      background: #007700;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    #UI div:hover {
+      background: #009900;
+    }
+  </style>
+<script>
+function CMNFOP(idDiva) {
+  const div = document.getElementById(idDiva);
+  if (div) {
+    div.innerHTML = '<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zGc6C82hrSOvB-RD8aqKPZ2U9xA9aKc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>';
+  }
+}
+</script>
+</head>
+<body>
+<div style="background: #009900; color: white;
+text-align: center; margin-right: 10%;margin-left:
+10%; border-radius: 18px;">
+<h1>To moja mapa</h1>
+<div id='content'>
+<div id='mapa'><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zGc6C82hrSOvB-RD8aqKPZ2U9xA9aKc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+</div><div id='UI'>
+<div id='PFOP' onclick='CMNFOP("mapa")'>Mapa Form Ochrony Przyrody</div>
+<div id='PPA' onclick='CMNPA'>Mapa Gmin</div>
+<div id='POG' onclick='CMNOG'>Mapa Ogólno Geograficzna</div>
+<div id='PK' onclick='C'>Mapa Gęstości </div>
+</div>
+</div>
+</body>
